@@ -102,12 +102,24 @@ html {
   height: 25rem;
   border-radius: 0.8rem;
 }
-.tarjetas h5 {
+@media (max-width: 1196px) {
+  .tarjetas img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.tarjetas h3 {
   font-size: 3.5rem;
   font-weight: bold;
   color: #333;
   margin-top: 1rem;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .tarjetas h3 {
+    font-size: 3rem;
+  }
 }
 .tarjetas p {
   font-size: 3rem;
@@ -117,11 +129,19 @@ html {
   padding: 0.5rem;
 }
 @media (max-width: 768px) {
-  .tarjetas h5 {
-    font-size: 3rem;
-  }
   .tarjetas p {
     font-size: 2.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .tarjetas img {
+    height: 15rem;
+  }
+  .tarjetas h3 {
+    font-size: 2.8rem;
+  }
+  .tarjetas p {
+    font-size: 2.4rem;
   }
 }
 
@@ -130,19 +150,13 @@ html {
   font-weight: 400;
   text-align: center;
   font-style: normal;
-  font-size: 35px;
-  margin: 20px 20px;
+  font-size: 3.5rem;
+  margin: 2rem 2rem;
 }
 @media (max-width: 768px) {
   .categoria {
-    font-size: 1.2rem;
-    margin: 10px 10px;
-  }
-}
-@media (max-width: 480px) {
-  .categoria {
-    font-size: 1rem;
-    margin: 5px 5px;
+    font-size: 2rem;
+    margin: 1rem 1rem;
   }
 }
 
@@ -231,14 +245,24 @@ html {
   text-align: center;
   font-size: 3rem;
 }
+@media (max-width: 768px) {
+  .reservas h2 {
+    font-size: 2.5rem;
+  }
+}
 .reservas p {
   font-size: 2.5rem;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .reservas p {
+    font-size: 2rem;
+  }
+}
 .reservas a {
   display: flex;
   text-decoration: none;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: brown;
   align-items: center;
   justify-content: center;
@@ -247,6 +271,11 @@ html {
 .reservas a:hover {
   color: darkorange;
   transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .reservas a {
+    font-size: 3.1rem;
+  }
 }
 
 .nuestra_historia {
@@ -258,14 +287,24 @@ html {
   text-align: center;
   font-size: 3rem;
 }
+@media (max-width: 768px) {
+  .nuestra_historia h2 {
+    font-size: 2.5rem;
+  }
+}
 .nuestra_historia p {
   font-size: 2.5rem;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .nuestra_historia p {
+    font-size: 2rem;
+  }
+}
 .nuestra_historia a {
   display: flex;
   text-decoration: none;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: brown;
   align-items: center;
   justify-content: center;
@@ -274,6 +313,11 @@ html {
 .nuestra_historia a:hover {
   color: darkorange;
   transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .nuestra_historia a {
+    font-size: 3.1rem;
+  }
 }
 
 .presentacion_menu {
@@ -288,7 +332,7 @@ html {
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/menuportada.jpg") center/cover no-repeat;
 }
-.presentacion_menu h2 {
+.presentacion_menu h1 {
   font-size: 5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -300,7 +344,7 @@ html {
   .presentacion_menu {
     padding: 1rem;
   }
-  .presentacion_menu h2 {
+  .presentacion_menu h1 {
     font-size: 3rem;
   }
   .presentacion_menu p {
@@ -311,7 +355,7 @@ html {
   .presentacion_menu {
     padding: 0.5rem;
   }
-  .presentacion_menu h2 {
+  .presentacion_menu h1 {
     font-size: 2.5rem;
   }
   .presentacion_menu p {
@@ -332,7 +376,7 @@ html {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/imageportada.webp") center/cover no-repeat;
   height: 600px;
 }
-.presentacion_sitio h2 {
+.presentacion_sitio h1 {
   font-size: 5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -344,7 +388,7 @@ html {
   .presentacion_sitio {
     padding: 1rem;
   }
-  .presentacion_sitio h2 {
+  .presentacion_sitio h1 {
     font-size: 3rem;
   }
   .presentacion_sitio p {
@@ -355,7 +399,7 @@ html {
   .presentacion_sitio {
     padding: 0.5rem;
   }
-  .presentacion_sitio h2 {
+  .presentacion_sitio h1 {
     font-size: 2.5rem;
   }
   .presentacion_sitio p {
