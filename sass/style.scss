@@ -347,7 +347,7 @@ html {
 
     .items {
         display: flex;
-        flex-direction: column; // Organiza los elementos en columna 
+        flex-direction: column; 
         align-items: center; 
 
         img {
@@ -380,6 +380,7 @@ html {
         }
     }
 }
+
 
 // Presentacion reservas e historia
 .reservas {
@@ -420,7 +421,7 @@ html {
     margin-bottom: 20px;
     padding: 15px;
 
-    h2, h3 {
+    h1, h2, h3 {
         text-align: center;
         color: #ff6347; // Color primario
         font-size: 2.5rem;
@@ -482,7 +483,7 @@ html {
     border-radius: 10px;
     padding: 2rem 0;
 
-    h2 {
+    h1 {
         color: #333;
         font-weight: bold;
         text-transform: uppercase;
@@ -491,7 +492,7 @@ html {
         font-size: 2rem;
     }
 
-    p {
+    h2 {
         margin-bottom: 1.5rem;
         color: #555;
         font-family: $font-family-montserrat;
@@ -543,7 +544,7 @@ html {
     padding: 4rem 2rem;
     background-color: #f1f5f8;
 
-    h2 {
+    h1 {
         font-size: 3rem;
         color: #333;
         font-weight: bold;
@@ -552,7 +553,6 @@ html {
         text-transform: uppercase;
         animation: fadeInDown 1s ease-in-out;
 
-        // Animación para el título
         @keyframes fadeInDown {
             0% {
                 opacity: 0;
